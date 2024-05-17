@@ -1,0 +1,16 @@
+.form1 {
+    display: none;
+  }
+  
+  .form2 {
+    display: none;
+  }
+  
+  .error {
+    border: solid thin red;
+    color:red;
+  }
+  .text
+  {
+    color:red
+  }

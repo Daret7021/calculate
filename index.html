@@ -1,0 +1,74 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <label>
+    <input type="radio" name="form" value="algebraic" checked>
+    Алгебраическая форма
+  </label>
+  <label>
+    <input type="radio" name="form" value="trigonometric">
+    Тригонометрическая форма
+  </label>
+  <p>
+    <button onClick="showForm()">Показать</button>
+  </p>
+  <form id="complex-form" class="form1">
+
+    <label>
+      Число 1:
+      <input type="number" id="real1" placeholder="Вещественная часть">
+      <input type="number" id="imag1" placeholder="Мнимая часть">
+    </label>
+    <br>
+    <label>
+      Число 2:
+      <input type="number" id="real2" placeholder="Вещественная часть">
+      <input type="number" id="imag2" placeholder="Мнимая часть">
+    </label>
+  </form>
+  <form id="trign-form" class="form2">
+
+    <label>
+      Число 1:
+      <input type="number" id="radius1" placeholder="Радиус">
+      <input type="number" id="angle1" placeholder="Угол">
+    </label>
+    <br>
+    <label>
+      Число 2:
+      <input type="number" id="radius2" placeholder="Радиус">
+      <input type="number" id="angle2" placeholder="Угол">
+    </label>
+    <br>
+  </form>
+
+  <br>
+  <label>
+    <span id = "select">Выберите операции:</span>
+    <select id="operations" multiple>
+      <option value="multiply">Произведение</option>
+      <option value="divide" >Частное</option>
+      <option value="add" >Сумма</option>
+      <option value="subtract" >Разность</option>
+    </select>
+  </label>
+  <P>
+    <button type="button" onclick="calculate()">Вычислить</button>
+    <button type="reset" onclick="clearForm()">Очистить</button>
+    </form>
+  </P>
+
+
+  <div id="result1"></div>
+  <div id="result2"></div>
+  <div id="result3"></div>
+  <div id="result4"></div>
+</body>
+<script src="script.js"> </script>
+
+</html>
